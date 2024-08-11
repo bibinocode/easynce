@@ -12,10 +12,18 @@
             "require": "./dist/vue3/easynce.umd.cjs",
             "style": "./dist/vue3/style.css"
         },
+        "./style": {
+            "import": "./dist/vue3/style.css",
+            "require": "./dist/vue3/style.css"
+        },
         "./vue2": {
             "import": "./dist/vue2/easynce.js",
             "require": "./dist/vue2/easynce.umd.cjs",
             "style": "./dist/vue2/style.css"
+        },
+        "./vue2/style": {
+            "import": "./dist/vue2/style.css",
+            "require": "./dist/vue2/style.css"
         },
         "./vue3": {
             "import": "./dist/vue3/easynce.js",

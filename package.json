@@ -4,9 +4,28 @@
     "description": "一个简单的低代码平台项目",
     "main": "index.js",
     "scripts": {
-        "ui": "pnpm -F @easynce/ui dev"
+        "ui": "pnpm -F @easynce/ui dev",
+        "clean": "rimraf --glob ./node_modules ./pnpm-lock.yaml ./packages/**/node_modules ./packages/**/**/node_modules ./packages/**/dist",
+        "build:ui": "pnpm -F @easynce/ui build"
     },
     "keywords": [],
     "author": "",
-    "license": "ISC"
+    "license": "ISC",
+    "pnpm": {
+        "packageExtensions": {
+            "vue-template-compiler": {
+                "devDependencies": {
+                    "vue": "^2.7.16"
+                }
+            },
+            "vue-template-compiler@2.7.16": {
+                "devDependencies": {
+                    "vue": "^2.7.16"
+                }
+            }
+        }
+    },
+    "devDependencies": {
+        "rimraf": "^6.0.1"
+    }
 }

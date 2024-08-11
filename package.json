@@ -1,0 +1,12 @@
+{
+    "name": "easynce",
+    "version": "1.0.0",
+    "description": "一个简单的低代码平台项目",
+    "main": "index.js",
+    "scripts": {
+        "ui": "pnpm -F @easynce/ui dev"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}

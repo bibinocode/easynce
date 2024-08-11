@@ -3,10 +3,19 @@
     "version": "1.1.0",
     "description": "一个简单的低代码平台项目",
     "main": "index.js",
+    "packageManager": "pnpm@8.7.1",
+    "engines": {
+        "pnpm": ">=8.7.1",
+        "node": ">=20.13.1"
+    },
     "scripts": {
+        "preinstall": "npx only-allow pnpm",
+        "in": "pnpm i -r",
         "ui": "pnpm -F @easynce/ui dev",
         "clean": "rimraf --glob ./node_modules ./pnpm-lock.yaml ./packages/**/node_modules ./packages/**/**/node_modules ./packages/**/dist",
-        "build:ui": "pnpm -F @easynce/ui build"
+        "build:ui": "pnpm -F @easynce/ui build",
+        "play:vue3": "pnpm -F @easynce/vue3 dev",
+        "play:vue2": "pnpm -F @easynce/vue2 dev"
     },
     "keywords": [],
     "author": "",

@@ -26,12 +26,14 @@
     },
     "scripts": {
         "dev": "vite",
-        "build": "pnpm build:vue3 && pnpm build:vue2",
+        "build": "pnpm clean:dist && pnpm build:vue3 && pnpm build:vue2",
         "build:vue3": "pnpm switch:vue3 && vue-tsc && vite build",
         "build:vue2": "pnpm switch:vue2 && vue-tsc && vite build",
         "switch:vue3": "vue-demi-switch 3 vue3",
         "switch:vue2": "vue-demi-switch 2 vue2",
-        "preview": "vite preview"
+        "preview": "vite preview",
+        "clean": "rimraf dist ./node_modules",
+        "clean:dist": "rimraf dist"
     },
     "dependencies": {
         "vue": "^3.4.35",

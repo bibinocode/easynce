@@ -16,6 +16,16 @@ export default defineConfig({
             entry: resolve(__dirname, 'src/main.ts'),
             name: "easynce",
             fileName:"easynce"
-      }
-  }
+        },
+        rollupOptions: {
+            external: ['vue', 'vue-demi'],
+            output: {
+                globals: { // umd 模式下的全局变量别名
+                    vue: "Vue",
+                    "vue-demi":"VueDemi"
+               }
+            }
+        }
+    },
+
 })

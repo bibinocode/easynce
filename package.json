@@ -17,7 +17,8 @@
         "build:ui": "pnpm -F @easynce/ui build",
         "play:vue3": "pnpm -F @easynce/vue3 dev",
         "play:vue2": "pnpm -F @easynce/vue2 dev",
-        "prepare": "husky"
+        "prepare": "husky",
+        "log": "pnpm conventional-changelog -p angular -i CHANGELOG.md -s"
     },
     "keywords": [],
     "author": "",
@@ -39,16 +40,18 @@
     "devDependencies": {
         "@commitlint/cli": "^19.4.0",
         "@commitlint/config-conventional": "^19.2.2",
-        "commitizen": "^4.3.0",
-        "cz-vinyl": "^2.5.1",
-        "husky": "^9.1.4",
-        "lint-staged": "^15.2.8",
-        "rimraf": "^6.0.1",
         "@vue/eslint-config-prettier": "^9.0.0",
         "@vue/eslint-config-typescript": "^13.0.0",
+        "commitizen": "^4.3.0",
+        "conventional-changelog": "^6.0.0",
+        "conventional-changelog-cli": "^5.0.0",
+        "cz-vinyl": "^2.5.1",
         "eslint": "^8.57.0",
+        "eslint-plugin-vue": "^9.23.0",
+        "husky": "^9.1.4",
+        "lint-staged": "^15.2.8",
         "prettier": "^3.2.5",
-        "eslint-plugin-vue": "^9.23.0"
+        "rimraf": "^6.0.1"
     },
     "lint-staged": {
         "*.{js,ts,vue}": "eslint"

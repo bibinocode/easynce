@@ -4,7 +4,7 @@ module.exports = {
   // 自定义解析器选项
   parserOpts: {
     headerPattern: /^(\w*)(?:\(([\w$.\-*/ ]*)\))?: (.*)$/, // 自定义提交信息头部的解析规则
-    headerCorrespondence: ['type'], // 映射头部解析结果到这些字段
+    headerCorrespondence: ['type', 'scope', 'subject'], // 映射头部解析结果到这些字段
     noteKeywords: ['BREAKING CHANGE', 'BREAKING CHANGES'], // 捕获破坏性变更的关键字
   },
   // 自定义生成器选项
@@ -19,6 +19,8 @@ module.exports = {
         commit.type = 'Performance Improvements'
       } else if (type === 'revert') {
         commit.type = 'Reverts'
+      } else if (type === 'chore') {
+        commit.type = 'Chore'
       } else if (!type || type === 'chore') {
         return
       }

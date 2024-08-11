@@ -19,7 +19,7 @@
         "play:vue3": "pnpm -F @easynce/vue3 dev",
         "play:vue2": "pnpm -F @easynce/vue2 dev",
         "prepare": "husky",
-        "log": "pnpm conventional-changelog -p angular -i CHANGELOG.md -s"
+        "log": "pnpm conventional-changelog -p ./changelog.config.cjs -i CHANGELOG.md -s"
     },
     "keywords": [],
     "author": "",
@@ -59,7 +59,10 @@
     },
     "config": {
         "commitizen": {
-            "path": "cz-vinyl"
+            "path": [
+                "cz-vinyl",
+                "conventional-changelog"
+            ]
         }
     }
 }

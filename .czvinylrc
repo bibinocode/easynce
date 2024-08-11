@@ -1,0 +1,62 @@
+{
+    "headerFormat": "{type}({scope}):{subject}",
+    "commitTypes": [
+        {
+            "description": "构建工具活构建过程等变动，杂活",
+            "value": "chore"
+        },
+        {
+            "description": "CI/CD工具脚本等变动",
+            "value": "ci"
+        },
+        {
+            "description": "文档修改",
+            "value": "docs"
+        },
+        {
+            "description": "新功能",
+            "value": "feat"
+        },
+        {
+            "description": "修复bug",
+            "value": "fix"
+        },
+        {
+            "description": "优化性能",
+            "value": "perf"
+        },
+        {
+            "description": "代码重 没有加新功能或修复bug",
+            "value": "refactor"
+        },
+        {
+            "description": "版本发布",
+            "value": "release"
+        },
+        {
+            "description": "样式格式变化，例如删除多余空白，删除分毫等",
+            "value": "style"
+        },
+        {
+            "description": "构建工具活内部依赖包的修改",
+            "value": "build"
+        },
+        {
+            "description": "撤销某个版本",
+            "value": "revert"
+        },
+        {
+            "description": "测试用例",
+            "value": "test"
+        }
+    ],
+    "skipScope":false,
+    "skipTicketId":true,
+    "skipBody":true,
+    "subjectMaxLength":70,
+    "subjectMinLength":3,
+    "typeQuestion":"选择提交类型:",
+    "scopeQuestion":"选择改动范围:",
+    "bodyQuestion":"请输入详细描述（可跳过）:",
+    "footerQuestion":"请输入备注（可跳过）:",
+}

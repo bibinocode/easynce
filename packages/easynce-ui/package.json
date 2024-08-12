@@ -41,7 +41,9 @@
         "switch:vue2": "vue-demi-switch 2 vue2",
         "preview": "vite preview",
         "clean": "rimraf dist ./node_modules",
-        "clean:dist": "rimraf dist"
+        "clean:dist": "rimraf dist",
+        "test": "pnpm switch:vue3 && vitest",
+        "coverage": "pnpm switch:vue3 && vitest run --coverage"
     },
     "dependencies": {
         "vue": "^3.4.35",
@@ -61,9 +63,11 @@
     },
     "devDependencies": {
         "@vitejs/plugin-vue": "^5.1.2",
+        "sass": "^1.77.8",
         "typescript": "^5.5.3",
         "vite": "^5.4.0",
         "vite-plugin-vue2": "^2.0.3",
+        "vitest": "^2.0.5",
         "vue-tsc": "^2.0.29"
     }
 }

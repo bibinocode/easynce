@@ -1,11 +1,3 @@
-<script setup lang="ts">
-
-</script>
-
 <template>
- <div>MVP版本实现</div>
+ <div class="text-3xl font-bold underline" >MVP版本实现</div>
 </template>
-
-<style scoped>
-
-</style>

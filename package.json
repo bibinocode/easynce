@@ -16,8 +16,8 @@
         "ui": "pnpm -F @easynce/ui dev",
         "clean": "rimraf --glob ./node_modules ./pnpm-lock.yaml ./packages/**/node_modules ./packages/**/**/node_modules ./packages/**/dist",
         "build:ui": "pnpm -F @easynce/ui build",
-        "play:vue3": "pnpm -F @easynce/vue3 dev",
-        "play:vue2": "pnpm -F @easynce/vue2 dev",
+        "play:vue3": "pnpm -F @easynce/playground-vue3 dev",
+        "play:vue2": "pnpm -F @easynce/playground-vue2 dev",
         "prepare": "husky",
         "log": "pnpm conventional-changelog -p ./changelog.config.js -i CHANGELOG.md -s -r 0"
     },
@@ -33,20 +33,6 @@
     "repository": {
         "type": "git",
         "url": "https://github.com/bibinocode/easynce"
-    },
-    "pnpm": {
-        "packageExtensions": {
-            "vue-template-compiler": {
-                "devDependencies": {
-                    "vue": "^2.7.16"
-                }
-            },
-            "vue-template-compiler@2.7.16": {
-                "devDependencies": {
-                    "vue": "^2.7.16"
-                }
-            }
-        }
     },
     "devDependencies": {
         "@commitlint/cli": "^19.4.0",

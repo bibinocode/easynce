@@ -34,7 +34,7 @@
     },
     "scripts": {
         "dev": "vite",
-        "build": "pnpm clean:dist && pnpm build:vue3 && pnpm build:vue2",
+        "build": "pnpm clean:dist && pnpm build:vue3",
         "build:vue3": "pnpm switch:vue3 && vue-tsc && vite build",
         "build:vue2": "pnpm switch:vue2 && vue-tsc && vite build",
         "switch:vue3": "vue-demi-switch 3 vue3",
@@ -48,25 +48,16 @@
     "dependencies": {
         "vue": "^3.4.35",
         "vue-demi": "^0.14.10",
-        "vue2": "npm:vue@~2.6.14",
-        "vue2.7": "npm:vue@~2.7.16",
         "vue3": "npm:vue@~3"
-    },
-    "peerDependencies": {
-        "@vue/composition-api": "^1.7.2",
-        "vue": "^2.0.0 || >=3.0.0"
-    },
-    "peerDependenciesMeta": {
-        "@vue/composition-api": {
-            "optional": true
-        }
     },
     "devDependencies": {
         "@vitejs/plugin-vue": "^5.1.2",
+        "autoprefixer": "^10.4.20",
+        "postcss": "^8.4.41",
         "sass": "^1.77.8",
+        "tailwindcss": "^3.4.9",
         "typescript": "^5.5.3",
         "vite": "^5.4.0",
-        "vite-plugin-vue2": "^2.0.3",
         "vitest": "^2.0.5",
         "vue-tsc": "^2.0.29"
     }

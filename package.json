@@ -19,11 +19,21 @@
         "play:vue3": "pnpm -F @easynce/vue3 dev",
         "play:vue2": "pnpm -F @easynce/vue2 dev",
         "prepare": "husky",
-        "log": "pnpm conventional-changelog -p angular -i CHANGELOG.md -s"
+        "log": "pnpm conventional-changelog -p ./changelog.config.js -i CHANGELOG.md -s -r 0"
     },
-    "keywords": [],
-    "author": "",
+    "keywords": [
+        "vue3",
+        "element-plus",
+        "vite",
+        "no-code",
+        "easynce"
+    ],
+    "author": "bbnocode",
     "license": "ISC",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/bibinocode/easynce"
+    },
     "pnpm": {
         "packageExtensions": {
             "vue-template-compiler": {

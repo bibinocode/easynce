@@ -1,0 +1,5 @@
+@use 'sass:math';
+@function vw($px) {
+  // 375比例
+  @return math.div($px, 375) * 100vw;
+}

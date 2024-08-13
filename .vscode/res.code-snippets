@@ -1,0 +1,14 @@
+{
+  "自定义封装的sass容器查询": {
+    "scope": "sass,scss",
+    "prefix": "res",
+    "body": ["@include res($1,$2,$3)"],
+    "description": "自定义封装的sass容器查询",
+  },
+  "自定义封装的容器查询宽度": {
+    "scope": "sass,scss",
+    "prefix": "resw",
+    "body": ["@include res(width,$1,$1)"],
+    "description": "自定义封装的sass容器查询宽度",
+  },
+}

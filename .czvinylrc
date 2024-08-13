@@ -1,5 +1,5 @@
 {
-    "headerFormat": "{type}({scope}):{subject}",
+    "headerFormat": "{type}({scope}): {subject}",
     "commitTypes": [
         {
             "description": "构建工具活构建过程等变动，杂活",

@@ -17,7 +17,6 @@
         "clean": "rimraf --glob ./node_modules ./pnpm-lock.yaml ./packages/**/node_modules ./packages/**/**/node_modules ./packages/**/dist",
         "build:ui": "pnpm -F @easynce/ui build",
         "play:vue3": "pnpm -F @easynce/playground-vue3 dev",
-        "play:vue2": "pnpm -F @easynce/playground-vue2 dev",
         "prepare": "husky",
         "log": "pnpm conventional-changelog -p ./changelog.config.js -i CHANGELOG.md -s -r 0"
     },

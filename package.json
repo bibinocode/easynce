@@ -14,6 +14,7 @@
         "cz": "pnpm git cz",
         "in": "pnpm i -r",
         "ui": "pnpm -F @easynce/ui dev",
+        "editor": "pnpm -F @easynce/editor dev",
         "clean": "rimraf --glob ./node_modules ./pnpm-lock.yaml ./packages/**/node_modules ./packages/**/**/node_modules ./packages/**/dist",
         "build:ui": "pnpm -F @easynce/ui build",
         "play:vue3": "pnpm -F @easynce/playground-vue3 dev",

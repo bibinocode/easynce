@@ -11,17 +11,19 @@ export default defineConfig({
   plugins: [
     vue(),
     AutoImport({
-      imports: ['vue'],
+      imports: ['vue', 'pinia'],
       resolvers: [ElementPlusResolver()],
       dts: 'types/auto-imports.d.ts',
+      include: ['src/**/*.vue', 'tests/**/*.vue'],
       // 输出类型的位置
     }),
     Components({
       resolvers: [ElementPlusResolver()],
       dirs: ['src/components'],
-      extensions: ['vue'],
+      extensions: ['vue', 'ts'],
       deep: true,
       dts: 'types/components.d.ts',
+      include: [/\.vue$/, /\.vue\?vue/],
     }),
   ],
   resolve: {
